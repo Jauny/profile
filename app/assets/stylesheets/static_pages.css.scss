@@ -132,6 +132,13 @@ content {
 	margin-left: 320px;
 	margin-top: 60px;
 	width: 650px;
+	a {
+		border-bottom: 1px dotted $lighterBlue;
+		&:hover {
+			border-bottom: 1px solid $darkerBlue;
+			color: $darkerBlue;
+		}
+	}
 }
 
 .section {
@@ -140,13 +147,6 @@ content {
 	width: 270px;
 	margin-right: 55px;
 	line-height: 25px;
-	a {
-		border-bottom: 1px dotted $lighterBlue;
-		&:hover {
-			border-bottom: 1px solid $darkerBlue;
-			color: $darkerBlue;
-		}
-	}
 	h2 {
 	font-size: 22px;
 	font-weight: bold;
