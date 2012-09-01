@@ -13,7 +13,45 @@ $greyBlue: 	   #274f7d;
 $fontColor:	   #152a43;
 $linkColor:	   #21426a;
 
+// fonts
+@font-face {
+    font-family: 'BonvenoCFLight';
+    src: url('BonvenoCF-Light-webfont.eot');
+    src: url('BonvenoCF-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('BonvenoCF-Light-webfont.woff') format('woff'),
+         url('BonvenoCF-Light-webfont.ttf') format('truetype'),
+         url('BonvenoCF-Light-webfont.svg#BonvenoCFLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'WalkwaySemiBoldRegular';
+    src: url('Walkway_SemiBold-webfont.eot');
+    src: url('Walkway_SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Walkway_SemiBold-webfont.woff') format('woff'),
+         url('Walkway_SemiBold-webfont.ttf') format('truetype'),
+         url('Walkway_SemiBold-webfont.svg#WalkwaySemiBoldRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'WalkwayBoldRegular';
+    src: font-url('Walkway_Bold-webfont.eot');
+    src: local('WalkwayBoldRegular'), font-url('Walkway_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('Walkway_Bold-webfont.woff') format('woff'),
+         font-url('Walkway_Bold-webfont.ttf') format('truetype'),
+         font-url('Walkway_Bold-webfont.svg#WalkwayBoldRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
+	font-family: 'WalkwaySemiBoldRegular';
 	background-color: $body;
 	color: $fontColor;
 	a {
@@ -41,7 +79,10 @@ header {
 		float: right;
 		margin: 50px 50px 50px 0;
 		width: 216px;
-		font-size: .9em;
+		color: $darkerBlue;
+		font-size: 11px;
+		font-weight: bold;
+		line-height: 17px;
 		text-align: justify;
 		img {
 			float: left;

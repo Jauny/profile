@@ -31,5 +31,9 @@ ol.tumblr_posts {
 	li.tumblr_post {
 		border-bottom: 1px dotted $greyBlue;
 		margin-bottom: 50px;
+		font-family: 'BonvenoCFLight';
+		.tumblr_body {
+			font-size: 14px;
+		}
 	}
 }
