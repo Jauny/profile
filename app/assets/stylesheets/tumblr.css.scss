@@ -1,0 +1,35 @@
+// Stylesheet for the tumblr feed in the home page
+// body color variables
+$header: 	   #eff6f9;
+$body:		   #f7fbff;
+$lighterBlue:  #689ad3;
+$lightBlue:    #4186d3;
+$blue: 		   #0d56a6;
+$darkerBlue:   #04356c;
+$greyBlue: 	   #274f7d;
+$fontColor:	   #152a43;
+$linkColor:	   #21426a;
+
+
+ol.tumblr_posts {
+	list-style: none;
+	text-align: justify;
+	ol {
+		list-style: decimal;
+	}
+	.tumblr_title {
+		font-size: 2em;
+		font-weight: bold;
+	}
+	li.tumblr_link_post {
+		a.tumblr_link {
+			font-size: 2em;
+			color: $fontColor;
+			font-weight: bold;
+		}
+	}
+	li.tumblr_post {
+		border-bottom: 1px dotted $greyBlue;
+		margin-bottom: 50px;
+	}
+}

@@ -1,0 +1,79 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// body color variables
+$header: 	   #eff6f9;
+$body:		   #f7fbff;
+$lighterBlue:  #689ad3;
+$lightBlue:    #4186d3;
+$blue: 		   #0d56a6;
+$darkerBlue:   #04356c;
+$greyBlue: 	   #274f7d;
+$fontColor:	   #152a43;
+$linkColor:	   #21426a;
+
+body {
+	background-color: $body;
+	color: $fontColor;
+	a {
+		color: $linkColor;
+		text-decoration: none;
+	}
+}
+
+header {
+	background-color: $header;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 300px;
+	height: 100%;
+	border-right: 1px solid $darkerBlue;
+	margin: 0;
+	img#rooster {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 30px;
+	}
+	.desc {
+		float: right;
+		margin: 50px 50px 50px 0;
+		width: 216px;
+		font-size: .9em;
+		text-align: justify;
+		img {
+			float: left;
+			margin-right: 5px;
+			border-radius: 10px;
+			width: 68px;
+		}
+	}
+	nav {
+		text-align: center;
+		padding: 0;
+		ul {
+			list-style: none;
+			font-weight: bold;
+			padding: 0;
+			& :hover {
+				border-bottom: 2px solid $darkerBlue;
+			}
+			li {
+				display: inline;
+				padding: 5px 10px;
+				& :hover {
+					border: none;
+				}
+			}
+		}
+	}
+}
+
+content {
+	float: left;
+	margin-left: 320px;
+	margin-top: 60px;
+	width: 650px;
+}
