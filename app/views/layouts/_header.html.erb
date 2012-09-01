@@ -7,12 +7,30 @@
 		and join a start-up in December.<br>
 		I love motorcycles, food and whisky.
 	</div>
+
 	<nav>
 		<ul class="menu">
-			<li><%= link_to 'Home', root_path %></li>
-			<li><%= link_to 'About', about_path %></li>
-			<li><%= link_to 'Twitter', 'http://www.twitter.com/Jauny', target: '_blank' %></li>
-			<li><%= link_to 'Github', 'https://github.com/Jauny', target: '_blank' %></li>
+			<li id="home">
+				<div class="icon-hidden"><i class="icon-home icon-large"></i>
+				</div>
+				<%= link_to 'Home', root_path %>
+			</li>
+			<li id="about">
+				<div class="icon-hidden"><i class="icon-info-sign icon-large"></i>
+				</div>
+				<%= link_to 'About', about_path %>
+			</li>
+			<li id="twitter">
+				<div class="icon-hidden"><i class="icon-twitter icon-large"></i></div>
+				<%= link_to 'Twitter', 'http://www.twitter.com/Jauny',
+					target: '_blank' %>
+			</li>
+			<li id="github">
+				<div class="icon-hidden"><i class="icon-github icon-large"></i>
+				</div>
+				<%= link_to 'Github', 'https://github.com/Jauny',
+					target: '_blank' %>
+			</li>
 		</ul>
 	</nav>
 </header>
