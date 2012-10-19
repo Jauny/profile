@@ -152,6 +152,12 @@ content {
 	font-weight: bold;
 	border-bottom: 2px solid $lighterBlue;
 	}
+  h3 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: -10px;
+  }
 	ul {
 		padding-left: 0;
 		li {
@@ -161,5 +167,6 @@ content {
 }
 
 .main {
-	width: 600px;
-}
+  width: 604px;
+  text-align: justify;
+  }
