@@ -1,34 +1,25 @@
 <header>
 
-	<%= link_to image_tag("carlyvanderlee.svg", id: "rooster"), root_path %>
-
 	<div class="desc">
-		<img src="https://secure.gravatar.com/avatar/42e10e7df6c5f098e09e8d4a1d612cc3" />
-		Hi, I'm Jonathan :)<br>
-		I'm a Fall DevBootcamp Student working to become a hacker 
-		and join a start-up in December.<br>
-		I love eSports, motorcycles and food.
+		<%= link_to image_tag("https://secure.gravatar.com/avatar/42e10e7df6c5f098e09e8d4a1d612cc3"), root_path %>
 	</div>
 
 	<nav>
 		<ul class="menu">
+			<li id="blog">
+				<%= link_to 'Blog', root_path %>
+			</li>
 			<li id="about">
-				<div class="icon-hidden"><i class="icon-info-sign icon-large"></i>
-				</div>
 				<%= link_to 'About', about_path %>
 			</li>
 			<li id="linkedin">
-				<div class="icon-hidden"><i class="icon-linkedin icon-large"></i>
-				</div>
 				<%= link_to 'LinkedIn', 'http://www.linkedin.com/profile/view?id=13273106', target: '_blank' %>
 			</li>
 			<li id="twitter">
-				<div class="icon-hidden"><i class="icon-twitter icon-large"></i></div>
 				<%= link_to 'Twitter', 'http://www.twitter.com/Jauny',
 					target: '_blank' %>
 			</li>
 			<li id="github">
-				<div class="icon-hidden"><i class="icon-github icon-large"></i>
 				</div>
 				<%= link_to 'Github', 'https://github.com/Jauny',
 					target: '_blank' %>
