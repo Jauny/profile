@@ -157,6 +157,7 @@ header {
 
   .posts {
     ul {
+      position: relative;
       list-style: none;
       padding-left: 0px;
       margin-left: 50px;
@@ -168,7 +169,9 @@ header {
         font-size: 25px;
       }
       li.date {
-        float: right;
+        position: absolute;
+        right: 0px;
+        bottom: 3px;
         font-size: 15px;
         color: $lighterBlue;
       }
