@@ -14,6 +14,8 @@ $fontColor:	   #152a43;
 $linkColor:	   #21426a;
 
 // fonts
+@import url(http://fonts.googleapis.com/css?family=Quattrocento:400,700);
+
 @font-face {
     font-family: 'BonvenoCFLight';
     src: url('BonvenoCF-Light-webfont.eot');
@@ -51,7 +53,8 @@ $linkColor:	   #21426a;
 }
 
 body {
-	font-family: 'WalkwaySemiBoldRegular';
+	font-family: 'Quattrocento', serif;
+  font-weight: 400;
 	background-color: $body;
 	color: $fontColor;
 	a {
@@ -107,25 +110,17 @@ header {
 	}
 }
 
-content {
-	float: left;
-	margin-left: 320px;
-	margin-top: 60px;
-	width: 650px;
-	a {
-		border-bottom: 1px dotted $lighterBlue;
-		&:hover {
-			border-bottom: 1px solid $darkerBlue;
-			color: $darkerBlue;
-		}
-	}
+.content {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
 }
 
 .section {
-	float: left;
-	display: block;
-	width: 270px;
-	margin-right: 55px;
+  float: left;
+	width: 40%;
+	margin-right: 10%;
 	line-height: 25px;
 	h2 {
 	font-size: 22px;
@@ -144,9 +139,22 @@ content {
 			list-style: none;
 		}
 	}
+  a {
+    border-bottom: 1px dotted $lighterBlue;
+    &:hover {
+      border-bottom: 1px solid $darkerBlue;
+      color: $darkerBlue;
+    }
+  }
 }
 
 .main {
-  width: 604px;
+  width: 90%;
   text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  .posts {
+
   }
