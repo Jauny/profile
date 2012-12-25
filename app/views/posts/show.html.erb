@@ -1,0 +1,11 @@
+<div class="post">
+  <div id="title">
+    <h1><%= @post.title %></h1>
+    <p class="date"><%= @post.date %></p>
+  </div>
+
+  <div class="post-content"><%= markdown @post.content %></div>
+
+  <div class="previous"><%= link_to "...#{@previous.title}", post_path(@previous) %></div>
+  <div class="next"><%= link_to "#{@next.title}...", post_path(@next) %></div>
+</div>

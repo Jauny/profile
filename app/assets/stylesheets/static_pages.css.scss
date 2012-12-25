@@ -156,5 +156,40 @@ header {
   }
 
   .posts {
+    ul {
+      list-style: none;
+      padding-left: 0px;
+      margin-left: 50px;
+      width: 70%;
+      li {
+        display: inline;
+      }
+      li.title {
+        font-size: 25px;
+      }
+      li.date {
+        float: right;
+        font-size: 15px;
+        color: $lighterBlue;
+      }
+    }
+  }
 
+  .post {
+    border-bottom: 1px solid $blue;
+    margin-bottom: 10px;
+    .date {
+      margin-top: -21px;
+      border-bottom: 1px solid $blue;
+    }
+    .previous {
+      float: left;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .next {
+      float: right;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
   }

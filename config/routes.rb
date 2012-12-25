@@ -1,8 +1,10 @@
 Jypepin::Application.routes.draw do
 
-  root to: 'StaticPages#home'
+  root to: 'posts#index'
 
   match 'about' => 'StaticPages#about'
+
+  resources :posts
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
