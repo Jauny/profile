@@ -166,13 +166,13 @@ header {
         display: inline;
       }
       li.title {
+        float: left;
         font-size: 25px;
       }
       li.date {
-        position: absolute;
-        right: 0px;
-        bottom: 3px;
-        font-size: 15px;
+        float: right;
+        font-size: 12px;
+        margin-top: 12px;
         color: $lighterBlue;
       }
     }
