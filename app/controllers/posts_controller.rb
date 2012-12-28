@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   http_basic_authenticate_with :name => ENV["NAME"], :password => ENV["PASS"], :except => [:index, :show]
 
   def index
-    @posts = Post.all.sort { |a,b| b.id <=> a.id }
+    @posts = Post.all.sort { |a,b| b.created_at <=> a.created_at }
   end
 
   def show
