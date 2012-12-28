@@ -1,5 +1,4 @@
 module ApplicationHelper
-
   class HTMLwithPygments < Redcarpet::Render::HTML
     def block_code(code, language)
       Pygments.highlight(code, lexer:language)
@@ -18,5 +17,4 @@ module ApplicationHelper
     }
     Redcarpet::Markdown.new(renderer, options).render(text).html_safe
   end
-
 end
