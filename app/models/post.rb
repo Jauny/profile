@@ -2,19 +2,17 @@ class Post < ActiveRecord::Base
   attr_accessible :content, :title
 
   def previous_post
-    begin
-      Post.find(self.id - 1)
-    rescue
-      Post.last
-    end
+    previous_posts = Post.where [ 'created_at < ?', self.created_at ]
+    previous_post = previous_posts.find(:all, :order => 'created_at DESC').first
+
+    previous_post.nil? ? Post.find(:all, :order => 'created_at DESC').first : previous_post
   end
 
   def next_post
-    begin
-      Post.find(self.id + 1)
-    rescue
-      Post.first
-    end  
+    next_posts = Post.where [ 'created_at > ?', self.created_at ]
+    next_post = next_posts.find(:all, :order => 'created_at ASC').first
+
+    next_post.nil? ? Post.find(:all, :order => 'created_at ASC').first : next_post
   end
 
   def preview
