@@ -1,6 +1,6 @@
 Jypepin::Application.routes.draw do
 
-  root to: 'StaticPages#about'
+  root to: 'Posts#index'
 
   match 'about' => 'StaticPages#about'
 
