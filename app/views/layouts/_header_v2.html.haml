@@ -1,0 +1,53 @@
+%header
+  .header-container
+    .intro.left
+      Hello, World!
+      %br/
+      I'm
+      = succeed "," do
+        %span Jonathan
+      from
+      = succeed "." do
+        %span Paris
+      %br/
+      One day I realized I wanted to
+      %br/
+      make the world better,
+      %br/
+      so I came to
+      = succeed "," do
+        %span San Francisco
+      %br/
+      went through #{link_to "DevBootcamp", "http://www.devbootcamp.com/"},
+      %br/
+      and now work as a
+      %br/
+      %span Software Engineer
+      at #{link_to "Exec", "http://iamexec.com/"}!
+
+    = image_tag "profile.png"
+
+    .intro.right
+      %p
+        When I'm not at work,
+        %br/
+        I usually ride, or race, my
+        = succeed "." do
+          %span motorcycle
+        %br/
+        If on the computer, it's to
+        %br/
+        tinker on
+        = succeed "," do
+          %span side projects
+        %br/
+        or watch
+        = succeed "." do
+          %span eSports
+
+      %p
+        = link_to "Twitter", "//www.twitter.com/Jauny"
+        _
+        = link_to "LinkedIn", "//www.linkedin.com/profile/view?id=13273106"
+        _
+        = link_to "GitHub", "//github.com/Jauny"

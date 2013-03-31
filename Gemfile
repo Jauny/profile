@@ -26,6 +26,9 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'haml-rails'
+gem 'less-rails'
+gem 'therubyracer'
 gem 'jquery-rails'
 gem 'pygments.rb'
 gem 'redcarpet'

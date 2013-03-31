@@ -1,8 +1,7 @@
 <div class="posts">
-  <h1>Blog</h1>
   <ul>
     <% @posts.each do |post| %>
-      <li class="title"><%= link_to post.title, post_path(post) %></li>
+      <li class="title"><h1><%= link_to post.title, post_path(post) %></h1></li>
       <li class="date"><%= post.date %></li><br>
     <% end %>
   </ul>

@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  a {
+    text-decoration: none;
+  }
+}
+
+header {
+  padding: 10px 0;
+  font-family: 'Myriad Pro', 'Arial', sans-serif;
+  font-size: 0.8em;
+  width: 100%;
+  background-color: #586d8c;
+
+  .header-container {
+    margin: 0 auto;
+    width: 48.2765%;
+    overflow: hidden;
+    color: #2d2d2d;
+    text-align: center;
+
+    a {
+      color: #3eb489;
+      text-shadow: 1px 1px #444;
+
+    }
+
+    .intro {
+      width: 32.3731%;
+      margin: auto;
+      &.left { float: left; text-align: left; margin-top: 15px; }
+      &.right { float: right; text-align: right; margin-top: 15px; }
+
+      span {
+        color: #3eb489;
+        text-shadow: 1px 1px #444;
+      }
+    }
+
+    img {
+      height: 150px;
+      border: 7px solid #e7f0e3;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+    }
+  }
+}
+
+.content {
+  width: 48.2765%;
+  margin: 10px auto;
+  font-family: 'Georgia', serif;
+
+  .posts {
+    width: 100%;
+    color: #3eb489;
+    text-align: center;
+
+    a {
+      color: #3eb489;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        &.title {
+          font-size: 2em;
+          font-family: 'Myriad Pro', 'Arial', sans-serif;
+        }
+        &.date {
+          color: #586d8c;
+          margin-top: -10px;
+        }
+      }
+    }
+  }
+
+  .post {
+    width: 100%;
+
+    .title {
+      color: #3eb489;
+      font-size: 2em;
+      font-family: 'Myriad Pro', 'Arial', sans-serif;
+    }
+    .date {
+      color: #586d8c;
+    }
+
+    .post-content {
+      text-align: center;
+      color: #2d2d2d;
+      font-size: 1.2em;
+    }
+
+    .previous {
+      float: left;
+      font-family: 'Myriad Pro', 'Arial', sans-serif;
+      a {color: #586d8c;}
+    }
+    .next {
+      float: right;
+      font-family: 'Myriad Pro', 'Arial', sans-serif;
+      a {color: #586d8c;}
+    }
+  }
+}
