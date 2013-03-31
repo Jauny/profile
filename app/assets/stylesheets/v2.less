@@ -3,6 +3,10 @@ body {
   a {
     text-decoration: none;
   }
+  span {
+    color: #3eb489;
+    text-shadow: 1px 1px #444;
+  }
 }
 
 header {
@@ -25,16 +29,18 @@ header {
 
     }
 
+    #intro-small {
+      width: 100%;
+      text-align: center;
+      display: none;
+    }
+
     .intro {
       width: 32.3731%;
       margin: auto;
       &.left { float: left; text-align: left; margin-top: 15px; }
       &.right { float: right; text-align: right; margin-top: 15px; }
 
-      span {
-        color: #3eb489;
-        text-shadow: 1px 1px #444;
-      }
     }
 
     img {
@@ -117,5 +123,18 @@ header {
       font-family: 'Myriad Pro', 'Arial', sans-serif;
       a {color: #586d8c;}
     }
+  }
+}
+
+@media screen and (max-width: 985px) {
+  header .header-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  header .header-container {
+  .intro { display: none; }
+  #intro-small { display: block; }
   }
 }
