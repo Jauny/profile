@@ -2,7 +2,7 @@ Jypepin::Application.routes.draw do
 
   root to: 'Posts#index'
 
-  match 'about' => 'StaticPages#about'
+  get 'projects' => 'StaticPages#projects'
 
   resources :posts
 

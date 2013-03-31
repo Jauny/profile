@@ -1,7 +1,6 @@
 class StaticPagesController < ApplicationController
 
-  def about
-    render :layout => "v2"
+  def projects
   end
 
 end

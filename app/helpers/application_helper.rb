@@ -17,4 +17,11 @@ module ApplicationHelper
     }
     Redcarpet::Markdown.new(renderer, options).render(text).html_safe
   end
+
+  def icon(name, size=1)
+    html = "<i class='icon-#{name}' "
+    html += "style='font-size:#{size}em' "
+    html += "></i>"
+    html.html_safe
+  end
 end

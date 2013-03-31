@@ -28,14 +28,23 @@
     = link_to image_tag("profile.png"), root_path
 
     #intro-small
-      Hi, I'm
-      %span Jonathan
-      a
-      %span Software Enginner
-      at
-      = link_to "Exec", "//iamexec.com"
-      :plain
-        :)
+      %p
+        Hi, I'm
+        %span Jonathan
+        a
+        %span Software Enginner
+        at
+        = link_to "Exec", "//iamexec.com"
+        :plain
+          :)
+        %br/
+        = link_to icon("twitter", 2), "//www.twitter.com/Jauny"
+        _
+        = link_to icon("linkedin", 2), "//www.linkedin.com/profile/view?id=13273106"
+        _
+        = link_to icon("github-sign", 2), "//github.com/Jauny"
+        _
+        = mail_to "jypepin@gmail.com", icon("envelope-alt", 1.7)
 
     .intro.right
       %p
@@ -49,17 +58,17 @@
         %br/
         tinker on
         = succeed "," do
-          %span side projects
+          = link_to "side projects", projects_path
         %br/
         or watch
         = succeed "." do
           %span eSports
 
       %p
-        = link_to "Twitter", "//www.twitter.com/Jauny"
+        = link_to icon("twitter", 2), "//www.twitter.com/Jauny"
         _
-        = link_to "LinkedIn", "//www.linkedin.com/profile/view?id=13273106"
+        = link_to icon("linkedin", 2), "//www.linkedin.com/profile/view?id=13273106"
         _
-        = link_to "GitHub", "//github.com/Jauny"
+        = link_to icon("github-sign", 2), "//github.com/Jauny"
         _
-        = mail_to "jypepin@gmail.com", "Say hello!"
+        = mail_to "jypepin@gmail.com", icon("envelope-alt", 1.7)
