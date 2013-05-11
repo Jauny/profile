@@ -5,7 +5,72 @@
 //colors
 
 body {
+  margin: 0;
   font-family: @serif;
 
+  .centered { text-align: center; }
 
+  header {
+    font-family: @sans-serif;
+    border-right: 1px solid red;
+    position: fixed;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 290px;
+    .profile-pic {
+      .centered;
+      img {
+        border-radius: 50%;
+        width: 75%;
+        max-width: 215px;
+      }
+    }
+    .bio {
+      line-height: 30px;
+      font-size: 1em;
+      ul {
+        list-style: none;
+        li {
+          &:first-child { font-weight: bold; }
+        }
+      }
+    }
+  }
+
+  .content {
+    border-right: 1px solid red;
+    margin-left: 350px;
+    padding: 10px;
+    width: 50%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    header {
+      width: 25%;
+      font-size: 0.6em;
+      .bio { ul { padding: 0; .centered; line-height: 20px; }}
+    }
+    .content {
+      margin-left: 25%;
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    header {
+      position: relative;
+      width: 100%;
+      .centered;
+      .profile-pic { img { width: 25%; }}
+      .bio {
+        ul { li {
+          display: inline;
+          &:first-child { display: list-item; line-height: 0px;}
+        }}}
+    }
+    .content {
+      margin-left: 0;
+    }
+  }
 }
