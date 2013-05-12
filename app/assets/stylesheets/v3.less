@@ -3,23 +3,32 @@
 @serif: 'Georgia', serif;
 
 //colors
+@mint: #006231;
+@grey-blue: #586d8c;
+@font-main: #2d2d2d;
+
 
 body {
   margin: 0;
   font-family: @serif;
+  color: @font-main;
+
+  a, a:hover, a:visited {
+    color: @mint;
+    text-decoration: none;
+  }
 
   .centered { text-align: center; }
 
   header {
     font-family: @sans-serif;
-    border-right: 1px solid red;
     position: fixed;
     left:0;
     top:0;
     height: 100%;
     width: 290px;
+    .centered;
     .profile-pic {
-      .centered;
       img {
         border-radius: 50%;
         width: 75%;
@@ -31,29 +40,109 @@ body {
       font-size: 1em;
       ul {
         list-style: none;
-        li {
-          &:first-child { font-weight: bold; }
+        padding-left: 0;
+        &.whois li {
+          &:first-child { font-weight: bold; line-height: 40px; }
+          line-height: 20px;
         }
       }
     }
   }
 
   .content {
-    border-right: 1px solid red;
     margin-left: 350px;
     padding: 10px;
     width: 50%;
+    max-width: 600px;
+    margin-top: 50px;
+
+    .posts {
+      .centered;
+      ul {
+        list-style: none;
+        padding-left: 0;
+        li.title {
+          font-size: 2em;
+        }
+        li.date {
+          font-family: @sans-serif;
+        }
+      }
+    }
+
+    .post {
+      .title {
+        font-size: 2em;
+      }
+      .date {
+        font-family: @sans-serif;
+        color: @mint;
+      }
+      .post-content {
+        .centered;
+        font-size: 1.2em;
+        line-height: 30px;
+      }
+
+      blockquote {
+        font-style: italic;
+        border-left: 5px solid @grey-blue;
+        padding-left: 5px;
+      }
+
+      .highlight {
+        padding: 0 10px;
+        background-color: @grey-blue;
+        overflow: scroll;
+        line-height: 17px;
+      }
+
+      .previous {
+        float: left;
+        font-family: @sans-serif;
+        a {color: @mint;}
+      }
+      .next {
+        float: right;
+        font-family: @sans-serif;
+        a {color: @mint;}
+      }
+
+    }
+    #disqus_thread { margin-top: 100px; }
   }
 
   @media only screen and (max-width: 768px) {
     header {
       width: 25%;
-      font-size: 0.6em;
-      .bio { ul { padding: 0; .centered; line-height: 20px; }}
+      font-size: 0.8em;
+      .bio {
+        ul {
+          padding: 0;
+          .centered;
+          line-height: 20px;
+          &.contact li {
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+        }
+      }
     }
     .content {
       margin-left: 25%;
-      width: 100%;
+      width: 70%;
+      .posts {
+        ul {
+          li.title {
+            font-size: 1.5em;
+          }
+        }
+      }
+      .post {
+        .post-content {
+          text-align: left;
+        }
+      }
     }
   }
 
@@ -61,16 +150,47 @@ body {
     header {
       position: relative;
       width: 100%;
+      font-size: 0.5em;
       .centered;
       .profile-pic { img { width: 25%; }}
       .bio {
-        ul { li {
+        ul {
+          margin-top: 0;
+          li {
           display: inline;
-          &:first-child { display: list-item; line-height: 0px;}
-        }}}
+          }
+          &.whois {
+            margin-bottom: 0;
+            margin-top: 10px;
+            li {
+              &:first-child { display: list-item; line-height: 0px;}
+            }
+          }
+        }
+      }
     }
     .content {
-      margin-left: 0;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      .posts {
+        ul {
+          li {
+            &.title { font-size: 1.2em; }
+            &.date { font-size: 0.9em; }
+          }
+        }
+      }
+      .post {
+        padding-left: 5px;
+        padding-right: 5px;
+        .title {
+          font-size: 1.5em;
+        }
+        .post-content {
+          font-size: 1em;
+        }
+      }
     }
   }
 }

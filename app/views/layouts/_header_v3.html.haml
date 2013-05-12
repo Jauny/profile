@@ -1,10 +1,17 @@
 %header
   .profile-pic
-    = image_tag "https://execmediaassets.s3.amazonaws.com/v2/hiring/team/Jonathan-Dino.jpg"
+    = link_to image_tag("https://execmediaassets.s3.amazonaws.com/v2/hiring/team/Jonathan-Dino.jpg"), root_path
   .bio
-    %ul
+    %ul.whois
       %li Jonathan Pepin
       %li DevBootcamp Fall12
       %li DevBootcamp Mentor
-      %li Soft. Engineer at Exec
+      %li Soft. Engineer at #{ link_to "Exec", "http://iamexec.com/house-cleaning/new-york/" }
+      %li Motorcycle
       %li Dinosaur
+
+    %ul.contact
+      %li= mail_to "jypepin@gmail.com" ,"Mail"
+      %li= link_to "Twitter", "https://twitter.com/Jauny"
+      %li= link_to "Github", "https://github.com/jauny"
+      %li= link_to "Linkedin", "http://www.linkedin.com/in/jypepin"
