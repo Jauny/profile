@@ -1,6 +1,18 @@
 %h1{:style => "font-family: 'FontAwesome';"}
 
 .project
+  %h2 San Francisco's Food Trucks
+  = link_to icon("link", 1.5), "//eatlikeadiplomat.herokuapp.com/"
+  = link_to icon("github", 1.5), "//github.com/Jauny/foodtrucks"
+  %p
+    = image_tag "foodtrucks.png"
+    %br/
+    %ul
+      %li Backend: Sinatra, with Sprockets for Assets Pipeline
+      %li Frontend: Backbone, Underscore, jQuery
+      %li API: Google Maps (map/geolocation), data.sfgov.org (foodtrucks)
+
+.project
   %h2 Swiv
   = link_to icon("link", 1.5), "//www.swiv.co/"
   = link_to icon("github", 1.5), "//github.com/jauny/swiv"
