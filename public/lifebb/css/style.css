@@ -1,0 +1,21 @@
+#nextLife {
+  text-align: center;
+}
+
+#board {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+
+#board .cell {
+  width: 23px;
+  height: 23px;
+  margin: 1px;
+  background-color: #9fb4b0;
+  float: left;
+}
+
+#board .cell.alive {
+  background-color: #aef3e4;
+}
