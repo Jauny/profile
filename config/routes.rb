@@ -6,7 +6,7 @@ Jypepin::Application.routes.draw do
 
   resources :posts
 
-  match '/lifebb', to => redirect('/lifebb/index.html')
+  get '/lifebb' => redirect('/lifebb/index.html')
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
