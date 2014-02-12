@@ -1,6 +1,17 @@
 %h1{:style => "font-family: 'FontAwesome';"}
 
 .project
+  %h2 Conway's Game of Life
+  = link_to icon("link", 1.5), "/lifebb"
+  = link_to icon("github", 1.5), "//github.com/Jauny/gameoflife/tree/master/lifebb"
+  %p
+    = image_tag "gameoflife.png"
+    %br/
+    %ul
+      %li Simple page app with no backend. Backbone for the front end.
+      %li Been playing around with Conway's Game of Life for some time on and off now, and always wanted to build some sort app allowing to play around with it. This one is exremely simple, but I'll add functionality over time if I even feel like it.
+
+.project
   %h2 San Francisco's Food Trucks
   = link_to icon("link", 1.5), "//eatlikeadiplomat.herokuapp.com/"
   = link_to icon("github", 1.5), "//github.com/Jauny/foodtrucks"
