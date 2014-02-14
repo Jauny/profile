@@ -3,8 +3,6 @@ $(function () {
   Cell = Backbone.Model.extend({
     initialize: function(alive) {
       this.alive = alive || false;
-
-      this.listenTo(this, 'toggleStatus', this.toggleStatus);
     },
 
     status: function() {
@@ -13,6 +11,7 @@ $(function () {
 
     toggleStatus: function() {
       this.alive = !this.alive;
+      this.trigger('toggleStatus');
     }
   });
 
@@ -31,7 +30,7 @@ $(function () {
     },
 
     toggleStatus: function() {
-      this.model.trigger('toggleStatus');
+      this.model.toggleStatus();
     },
 
     toggleClass: function() {
