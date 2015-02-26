@@ -20,6 +20,6 @@ class Post < ActiveRecord::Base
   end
 
   def date
-    self.created_at.strftime('%a, %B %d')
+    self.created_at.strftime('%a, %B %d %Y')
   end
 end
